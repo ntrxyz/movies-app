@@ -5,7 +5,7 @@ import { Paper } from '@mui/material';
 
 const Hero = ({movies}) => {
   return (
-    <div>
+    <div className='movie-carousel-container'>
       <Carousel>
         {
             movies.map((movie)=>{
@@ -14,7 +14,7 @@ const Hero = ({movies}) => {
                         <div className='movie-card-container'>
                           <div className='movie-card' style={{"--img": `url(${movie.backdrops[0]})`}}>
                             <div className="movie-detail">
-                                <div className="movvie-poster">
+                                <div className="movie-poster">
                                   <img src={movie.poster} alt={movie.title} />
                                 </div>
                                 <div className="movie-title">
